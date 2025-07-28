@@ -80,8 +80,12 @@ WSGI_APPLICATION = 'patient_backend.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'hospital',
+        'USER': 'postgres',
+        'PASSWORD': 'AKariuki@2006',
+        'HOST': 'localhost',  # e.g., 'localhost' or an IP address
+        'PORT': '5432',  # e.g., '5432'
     }
 }
 
